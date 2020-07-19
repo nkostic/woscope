@@ -43,7 +43,7 @@ window.onload = function () {
 
     updatePageInfo();
 
-    htmlAudio.src = './woscope-music/' + (htmlAudio.canPlayType('audio/ogg') ? file : libraryDict[file].mpeg);
+    htmlAudio.src = './jcnk-music/' + (htmlAudio.canPlayType('audio/ogg') ? file : libraryDict[file].mpeg);
     htmlAudio.load();
 
     window.onresize();

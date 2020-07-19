@@ -4,29 +4,21 @@ let woscope = require('../');
 
 let libraryInfo = [
     {
-        file: 'khrang.ogg',
-        mpeg: 'khrang.m4a',
-        author: 'Jerobeam Fenderson',
-        title: 'Khrậng',
-        link: 'https://www.youtube.com/watch?v=vAyCl4IHIz8',
+        file: 'BEAMS-JCNK-NOV092019-BLOCK1 INTRO.ogg',
+        mpeg: 'BEAMS-JCNK-NOV092019-BLOCK1 INTRO.mp3',
+        author: 'JCNK',
+        title: 'B1',
+        link: 'https://jcnk.space',
         swap: true,
     },
     {
-        file: 'oscillofun.ogg',
-        mpeg: 'oscillofun.mp3',
-        author: 'ATOM DELTA',
-        title: 'Oscillofun',
-        link: 'https://www.youtube.com/watch?v=o4YyI6_y6kw',
+        file: 'BEAMS-JCNK-NOV092019-HALFBLOK1.ogg',
+        mpeg: 'BEAMS-JCNK-NOV092019-HALFBLOK1.mp3',
+        author: 'JCNK',
+        title: 'B2',
+        link: 'https://jcnk.space',
         invert: true,
-    },
-    {
-        file: 'alpha_molecule.ogg',
-        mpeg: 'alpha_molecule.mp3',
-        author: 'Alexander Taylor',
-        title: 'The Alpha Molecule',
-        link: 'https://www.youtube.com/watch?v=XM8kYRS-cNk',
-        invert: true,
-    },
+    }
 ];
 
 let libraryDict = {};
@@ -46,7 +38,7 @@ window.onload = function() {
 
     updatePageInfo();
 
-    htmlAudio.src = './woscope-music/' + (htmlAudio.canPlayType('audio/ogg') ? file : libraryDict[file].mpeg);
+    htmlAudio.src = './jcnk-music/' + (htmlAudio.canPlayType('audio/ogg') ? file : libraryDict[file].mpeg);
     htmlAudio.load();
 
     window.onresize();
